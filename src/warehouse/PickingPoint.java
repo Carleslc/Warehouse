@@ -1,7 +1,11 @@
+package warehouse;
+
+import warehouse.pieces.Piece;
+
 /**
  * Picking point that has capacity for one piece.
  */
-public class PickingPoint {
+public class PickingPoint implements Positionable {
 
     /**
      * The position of this picking point.
@@ -25,6 +29,7 @@ public class PickingPoint {
      * Retrieves the position of this picking point.
      * @return the position of this picking point
      */
+    @Override
     public Position getPosition() {
         return position;
     }

@@ -1,3 +1,5 @@
+package warehouse;
+
 /**
  * Position with coordinates x (horizontal axis) and y (vertical axis)
  */
@@ -60,6 +62,7 @@ public class Position {
      * Get a String representation of this position
      * @return a String representation of this position
      */
+    @Override
     public String toString() {
         return "(" + x + ", " + y + ")";
     }

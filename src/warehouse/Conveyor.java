@@ -1,5 +1,9 @@
+package warehouse;
+
 import java.util.LinkedList;
 import java.util.Queue;
+
+import warehouse.pieces.Piece;
 
 /**
  * A conveyor that moves pieces to a picking point.
@@ -64,6 +68,8 @@ public class Conveyor {
         Piece piece = pickingPoint.unload();
 
         moveForward();
+        
+        System.out.println("There are " + getSize() + " pieces remaining in the conveyor");
 
         return piece;
     }
